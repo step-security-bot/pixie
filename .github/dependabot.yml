@@ -13,3 +13,139 @@ updates:
     interval: "daily"
   # Alert but don't open PRs
   open-pull-requests-limit: 0
+
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /bazel/external/ubuntu_packages
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /src/api/python/doc
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /src/api/python
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /src/datagen/pii/privy
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/e2e_test/protocol_loadtest/http/wrk
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/experimental/multi_arch
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /src/stirling/protocol_inference
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /src/stirling/source_connectors/socket_tracer/protocols/amqp/amqp_code_generator
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /src/stirling/source_connectors/socket_tracer/testing/containers/amqp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/stirling/source_connectors/socket_tracer/testing/containers/mysql
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /src/stirling/testing/demo_apps/py_grpc
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /src/stirling/testing/demo_apps/py_grpc
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/ui/.yarn/sdks/eslint
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/ui/.yarn/sdks/prettier
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/ui/.yarn/sdks/typescript
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools/docker/clang_deb_image
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools/docker/copybara
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools/docker/curl_image
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools/docker/elasticsearch
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools/docker/gperftools_deb_image
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools/docker/graalvm_archive_image
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools/docker/kernel_builder
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools/docker/linux_headers_image
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools/docker/musl_cross_image
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools/docker/sysroot_creator
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /tools/docker/user_dev_image
+    schedule:
+      interval: daily
