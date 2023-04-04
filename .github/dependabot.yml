@@ -159,3 +159,24 @@ updates:
     interval: daily
   # Disable version updates but keep security updates
   open-pull-requests-limit: 0
+
+
+  - package-ecosystem: pip
+    directory: /src/stirling/source_connectors/socket_tracer/testing/containers/mysql
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/ui/.yarn/sdks/eslint
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/ui/.yarn/sdks/prettier
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/ui/.yarn/sdks/typescript
+    schedule:
+      interval: daily
